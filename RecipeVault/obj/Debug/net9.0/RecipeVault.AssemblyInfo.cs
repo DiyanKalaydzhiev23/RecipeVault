@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeVault")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01dad1ade78ee7f67c11a0b9e5003c3035655479")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46f334230495547e86e5403974da3886e0733656")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeVault")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeVault")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
