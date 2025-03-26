@@ -1,8 +1,28 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Recipe App";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/img/chef.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <title>Recipe App</title>
+</head>
+<body>
+<div class="container">
+    <div class="search-container">
+        <input type="text" placeholder="Type A Dish Name Here.." id="user-inp" />
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="result"></div>
 </div>
+
+<script src="~/js/site.js"></script>
+</body>
+</html>

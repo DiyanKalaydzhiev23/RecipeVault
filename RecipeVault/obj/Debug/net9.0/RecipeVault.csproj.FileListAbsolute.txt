@@ -18,9 +18,7 @@
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/scopedcss/bundle/RecipeVault.styles.css
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/scopedcss/projectbundle/RecipeVault.bundle.scp.css
-/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-lugek5hnai.gz
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/gcgdra4304-61n19gt1b8.gz
-/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-fr7q2aak1r.gz
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/bjxyrb4pyv-bqjiyaj88i.gz
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/hxo1z5znpw-c2jlpeoesf.gz
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/goxwj7zms4-erw9l3u2r3.gz
@@ -233,3 +231,5 @@
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Microsoft.Extensions.Identity.Core.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-far9ke272l.gz
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-z8zihjv44q.gz

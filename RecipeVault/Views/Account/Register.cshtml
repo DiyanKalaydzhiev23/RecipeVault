@@ -1,0 +1,13 @@
+@model RecipeVault.Models.RegisterViewModel
+
+<h2>Register</h2>
+<form asp-action="Register" method="post">
+    <input type="email" asp-for="Email" placeholder="Email" required />
+    <span asp-validation-for="Email"></span>
+
+    <input type="password" asp-for="Password" placeholder="Password" required />
+    <span asp-validation-for="Password"></span>
+
+    <button type="submit">Register</button>
+</form>
+<p>Already have an account? <a href="/Account/Login">Login</a></p>
