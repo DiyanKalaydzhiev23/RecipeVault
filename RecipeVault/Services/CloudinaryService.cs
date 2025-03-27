@@ -1,8 +1,5 @@
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using System.Threading.Tasks;
 
 namespace RecipeVault.Services
 {
@@ -10,13 +7,20 @@ namespace RecipeVault.Services
     {
         private readonly Cloudinary _cloudinary;
 
-        public CloudinaryService(IConfiguration config)
+        public CloudinaryService()
         {
             var account = new Account(
-                config["Cloudinary:CloudName"],
-                config["Cloudinary:ApiKey"],
-                config["Cloudinary:ApiSecret"]
+                Environment.GetEnvironmentVariable("CLOUDINARY_CLOUD_NAME"),
+                Environment.GetEnvironmentVariable("CLOUDINARY_API_KEY"),
+                Environment.GetEnvironmentVariable("CLOUDINARY_API_SECRET")
             );
+
+            if (string.IsNullOrEmpty(account.Cloud) ||
+                string.IsNullOrEmpty(account.ApiKey) ||
+                string.IsNullOrEmpty(account.ApiSecret))
+            {
+                throw new ArgumentException("Cloudinary credentials are missing or invalid.");
+            }
 
             _cloudinary = new Cloudinary(account);
         }
@@ -24,7 +28,6 @@ namespace RecipeVault.Services
         public async Task<string> UploadImageAsync(IFormFile file)
         {
             using var stream = file.OpenReadStream();
-
             var uploadParams = new ImageUploadParams
             {
                 File = new FileDescription(file.FileName, stream),

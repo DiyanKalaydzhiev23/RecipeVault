@@ -1,3 +1,4 @@
+using CloudinaryDotNet;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RecipeVault.Data;
@@ -6,10 +7,17 @@ using RecipeVault.Services;
 DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+
+var cloudinary = new Cloudinary(new Account(
+    Environment.GetEnvironmentVariable("CLOUDINARY_CLOUD_NAME"),
+    Environment.GetEnvironmentVariable("CLOUDINARY_API_KEY"),
+    Environment.GetEnvironmentVariable("CLOUDINARY_API_SECRET")
+));
 
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()

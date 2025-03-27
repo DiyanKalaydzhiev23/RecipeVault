@@ -1,0 +1,48 @@
+@model RecipeVault.ViewModels.RecipeViewModel
+@using RecipeVault.Enums
+
+<h2>Create Recipe</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label asp-for="Difficulty"></label>
+        <select asp-for="Difficulty" asp-items="Html.GetEnumSelectList<RecipeDifficultyLevel>()"></select>
+    </div>
+
+    <div>
+        <label asp-for="PreparationTime"></label>
+        <input asp-for="PreparationTime" type="number" />
+    </div>
+
+    <div>
+        <label asp-for="ImageFile"></label>
+        <input asp-for="ImageFile" type="file" />
+    </div>
+
+    <div id="ingredients-wrapper">
+        <label>Ingredients</label>
+        <input type="text" name="IngredientNames" placeholder="e.g., Garlic" />
+    </div>
+
+    <button type="button" onclick="addIngredient()">Add Another Ingredient</button>
+    <br />
+    <button type="submit">Create</button>
+</form>
+
+@section Scripts {
+    <script>
+        function addIngredient() {
+            const wrapper = document.getElementById('ingredients-wrapper');
+            const newInput = document.createElement('input');
+            newInput.type = 'text';
+            newInput.name = 'IngredientNames';
+            newInput.placeholder = 'e.g., Basil';
+            wrapper.appendChild(newInput);
+        }
+    </script>
+}

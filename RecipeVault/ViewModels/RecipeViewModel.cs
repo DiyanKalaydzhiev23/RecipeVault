@@ -1,5 +1,5 @@
-using System.ComponentModel.DataAnnotations;
 using RecipeVault.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace RecipeVault.ViewModels
 {
@@ -12,10 +12,11 @@ namespace RecipeVault.ViewModels
         public RecipeDifficultyLevel Difficulty { get; set; }
 
         [Required]
-        [Display(Name = "Preparation Time (minutes)")]
         public int PreparationTime { get; set; }
 
         [Required]
         public IFormFile ImageFile { get; set; }
+
+        public List<string> IngredientNames { get; set; } = new();
     }
 }

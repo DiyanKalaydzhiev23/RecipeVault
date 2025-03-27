@@ -27,5 +27,7 @@ namespace RecipeVault.Models
 
         [ForeignKey("UserId")]
         public IdentityUser User { get; set; }
+        
+        public ICollection<RecipeIngredient> RecipeIngredients { get; set; }
     }
 }
