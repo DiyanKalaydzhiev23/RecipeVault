@@ -1,13 +1,20 @@
 @model RecipeVault.Models.LoginViewModel
 
 <h2>Login</h2>
-<form asp-action="Login" method="post">
-    <input type="email" asp-for="Email" placeholder="Email" required />
-    <span asp-validation-for="Email"></span>
+<div class="container">
+    <div asp-validation-summary="All" class="text-danger"></div>
 
-    <input type="password" asp-for="Password" placeholder="Password" required />
-    <span asp-validation-for="Password"></span>
+    <form asp-action="Login" method="post" class="justify-content-center">
 
-    <button type="submit">Login</button>
-</form>
-<p>Don't have an account? <a href="/Account/Register">Register</a></p>
+        <div class="search-container d-flex flex-column">
+            <input type="email" asp-for="Email" placeholder="Email" required/>
+            <span asp-validation-for="Email"></span>
+
+            <input type="password" asp-for="Password" placeholder="Password" required/>
+            <span asp-validation-for="Password"></span>
+
+            <button class="p-2" type="submit">Login</button>
+        </div>
+    </form>
+    <p class="text-center mt-5">Don't have an account? <a href="/Account/Register">Register</a></p>
+</div>
