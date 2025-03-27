@@ -1,0 +1,32 @@
+@model RecipeVault.ViewModels.RecipeViewModel
+@using RecipeVault.Models
+
+<h2>Create a Recipe</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="Difficulty"></label>
+        <select asp-for="Difficulty" asp-items="Html.GetEnumSelectList<DifficultyLevel>()"></select>
+        <span asp-validation-for="Difficulty"></span>
+    </div>
+
+    <div>
+        <label asp-for="PreparationTime"></label>
+        <input asp-for="PreparationTime" type="number" />
+        <span asp-validation-for="PreparationTime"></span>
+    </div>
+
+    <div>
+        <label asp-for="ImageFile"></label>
+        <input asp-for="ImageFile" type="file" />
+        <span asp-validation-for="ImageFile"></span>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
