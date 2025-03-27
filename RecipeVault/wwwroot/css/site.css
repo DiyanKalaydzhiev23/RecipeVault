@@ -40,6 +40,16 @@ body {
   border-radius: 0.3em;
   cursor: pointer;
 }
+
+.custom-button {
+  font-size: 1em;
+  background-color: #f4c531;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
 img {
   display: block;
   width: 50%;

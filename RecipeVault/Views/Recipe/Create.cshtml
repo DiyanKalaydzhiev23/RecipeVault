@@ -1,48 +1,62 @@
 @model RecipeVault.ViewModels.RecipeViewModel
 @using RecipeVault.Enums
 
-<h2>Create Recipe</h2>
-
-<form asp-action="Create" method="post" enctype="multipart/form-data">
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" />
+<form asp-action="Create" method="post" class="container mt-4" enctype="multipart/form-data">
+    <!-- Recipe Name -->
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label small text-muted"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger small"></span>
     </div>
 
-    <div>
-        <label asp-for="Difficulty"></label>
-        <select asp-for="Difficulty" asp-items="Html.GetEnumSelectList<RecipeDifficultyLevel>()"></select>
+    <!-- Difficulty -->
+    <div class="mb-3">
+        <label asp-for="Difficulty" class="form-label small text-muted"></label>
+        <select asp-for="Difficulty" class="form-select" asp-items="Html.GetEnumSelectList<RecipeDifficultyLevel>()"></select>
+        <span asp-validation-for="Difficulty" class="text-danger small"></span>
     </div>
 
-    <div>
-        <label asp-for="PreparationTime"></label>
-        <input asp-for="PreparationTime" type="number" />
+    <!-- Preparation Time -->
+    <div class="mb-3">
+        <label asp-for="PreparationTime" class="form-label small text-muted"></label>
+        <input asp-for="PreparationTime" class="form-control" type="number" />
+        <span asp-validation-for="PreparationTime" class="text-danger small"></span>
     </div>
 
-    <div>
-        <label asp-for="ImageFile"></label>
-        <input asp-for="ImageFile" type="file" />
+    <!-- Image Upload -->
+    <div class="mb-3">
+        <label asp-for="ImageFile" class="form-label small text-muted"></label>
+        <input asp-for="ImageFile" class="form-control" type="file" />
+        <span asp-validation-for="ImageFile" class="text-danger small"></span>
     </div>
 
-    <div id="ingredients-wrapper">
-        <label>Ingredients</label>
-        <input type="text" name="IngredientNames" placeholder="e.g., Garlic" />
+    <!-- Ingredients -->
+    <div class="mb-3">
+        <label class="form-label small text-muted">Ingredients</label>
+        <div id="ingredients-wrapper">
+            <input type="text" name="IngredientNames" class="form-control mb-2" placeholder="e.g., Garlic" />
+        </div>
+        <button type="button" class="btn btn-outline-secondary btn-sm" onclick="addIngredient()">+ Add Ingredient</button>
     </div>
 
-    <button type="button" onclick="addIngredient()">Add Another Ingredient</button>
-    <br />
-    <button type="submit">Create</button>
+    <!-- Submit -->
+    <div class="mb-3">
+        <button class="w-100 p-2 custom-button" type="submit">Create</button>
+    </div>
 </form>
 
 @section Scripts {
     <script>
         function addIngredient() {
             const wrapper = document.getElementById('ingredients-wrapper');
-            const newInput = document.createElement('input');
-            newInput.type = 'text';
-            newInput.name = 'IngredientNames';
-            newInput.placeholder = 'e.g., Basil';
-            wrapper.appendChild(newInput);
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'IngredientNames';
+            input.className = 'form-control mb-2';
+            input.placeholder = 'e.g., Basil';
+
+            wrapper.appendChild(input);
         }
     </script>
 }
