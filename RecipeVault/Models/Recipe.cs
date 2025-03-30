@@ -14,6 +14,9 @@ namespace RecipeVault.Models
 
         [Required]
         public RecipeDifficultyLevel Difficulty { get; set; }
+        
+        [Required]
+        public string Instructions { get; set; }
 
         [Required]
         [Display(Name = "Preparation Time (minutes)")]

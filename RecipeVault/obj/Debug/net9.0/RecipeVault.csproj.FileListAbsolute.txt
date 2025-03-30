@@ -231,9 +231,9 @@
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Microsoft.Extensions.Identity.Core.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll
-/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-far9ke272l.gz
-/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-z8zihjv44q.gz
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/CloudinaryDotNet.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/DotNetEnv.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Newtonsoft.Json.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Sprache.dll
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz

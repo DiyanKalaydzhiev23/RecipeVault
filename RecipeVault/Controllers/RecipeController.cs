@@ -25,18 +25,20 @@ namespace RecipeVault.Controllers
             _userManager = userManager;
             _cloudinary = cloudinary;
         }
-
+        
+        // Renders the Create view
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
+        // POST /Recipe/Create
         [HttpPost]
         public async Task<IActionResult> Create(RecipeViewModel model)
         {
             if (!ModelState.IsValid)
-                return View(model);
+                return View(model); // Assumes form posts from a Razor view
 
             var imageUrl = await _cloudinary.UploadImageAsync(model.ImageFile);
             var userId = _userManager.GetUserId(User);
@@ -51,7 +53,9 @@ namespace RecipeVault.Controllers
                 RecipeIngredients = new List<RecipeIngredient>()
             };
 
-            foreach (var ingredientName in model.IngredientNames.Where(name => !string.IsNullOrWhiteSpace(name)).Distinct(StringComparer.OrdinalIgnoreCase))
+            foreach (var ingredientName in model.IngredientNames
+                .Where(name => !string.IsNullOrWhiteSpace(name))
+                .Distinct(StringComparer.OrdinalIgnoreCase))
             {
                 var existing = await _context.Ingredients
                     .FirstOrDefaultAsync(i => i.Name.ToLower() == ingredientName.ToLower());
@@ -61,7 +65,7 @@ namespace RecipeVault.Controllers
                 if (existing == null)
                 {
                     _context.Ingredients.Add(ingredient);
-                    await _context.SaveChangesAsync(); // to generate Id
+                    await _context.SaveChangesAsync();
                 }
 
                 recipe.RecipeIngredients.Add(new RecipeIngredient
@@ -75,6 +79,45 @@ namespace RecipeVault.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index", "Home");
+        }
+
+        // GET /Recipe/api/{name}
+        [HttpGet("Recipe/api/{name}")]
+        [AllowAnonymous] // Optional: allows frontend access without login
+        public async Task<IActionResult> GetRecipeJson(string name)
+        {
+            var recipes = await _context.Recipes
+                .Include(r => r.RecipeIngredients)
+                .ThenInclude(ri => ri.Ingredient)
+                .Where(r => r.Name.ToLower() == name.ToLower())
+                .ToListAsync();
+
+            if (recipes == null || recipes.Count == 0)
+                return NotFound(new { meals = (object)null });
+
+            var meals = new List<Dictionary<string, object>>();
+
+            foreach (var recipe in recipes)
+            {
+                var meal = new Dictionary<string, object>
+                {
+                    ["name"] = recipe.Name,
+                    ["image"] = recipe.ImageUrl,
+                    ["instructions"] = recipe.Instructions,
+                };
+                
+                var ingredients = new List<string>();
+                foreach (var recipeIngredient in recipe.RecipeIngredients)
+                {
+                    ingredients.Add(recipeIngredient.Ingredient.Name);
+                }
+                
+                meal["ingredients"] = ingredients;
+
+                meals.Add(meal);
+            }
+
+            return Ok(new { meals });
         }
     }
 }

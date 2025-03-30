@@ -7,7 +7,7 @@ searchBtn.addEventListener("click", () => {
     if (userInp.length == 0) {
         result.innerHTML = `<h3>Input Field Cannot Be Empty</h3>`;
     } else {
-        fetch(`/api/recipes/${userInp}`)
+        fetch(`/recipe/api/${userInp}`)
             .then((response) => response.json())
             .then((data) => {
                 if (!data.meals) {
@@ -16,34 +16,23 @@ searchBtn.addEventListener("click", () => {
                 }
 
                 let myMeal = data.meals[0];
-                let count = 1;
-                let ingredients = [];
-                for (let i in myMeal) {
-                    if (i.startsWith("strIngredient") && myMeal[i]) {
-                        let ingredient = myMeal[i];
-                        let measure = myMeal[`strMeasure` + count];
-                        count += 1;
-                        ingredients.push(`${measure} ${ingredient}`);
-                    }
-                }
 
                 result.innerHTML = `
-          <img src=${myMeal.strMealThumb}>
-          <div class="details">
-              <h2>${myMeal.strMeal}</h2>
-              <h4>${myMeal.strArea}</h4>
-          </div>
-          <div id="ingredient-con"></div>
-          <div id="recipe">
-              <button id="hide-recipe">X</button>
-              <pre id="instructions">${myMeal.strInstructions}</pre>
-          </div>
-          <button id="show-recipe">View Recipe</button>
-        `;
+                  <img src=${myMeal.image}>
+                  <div class="details">
+                      <h2>${myMeal.name}</h2>
+                  </div>
+                  <div id="ingredient-con"></div>
+                  <div id="recipe">
+                      <button id="hide-recipe">X</button>
+                      <pre id="instructions">${myMeal.instructions}</pre>
+                  </div>
+                  <button id="show-recipe">View Recipe</button>
+                `;
 
                 let ingredientCon = document.getElementById("ingredient-con");
                 let parent = document.createElement("ul");
-                ingredients.forEach((i) => {
+                myMeal.ingredients.forEach((i) => {
                     let child = document.createElement("li");
                     child.innerText = i;
                     parent.appendChild(child);

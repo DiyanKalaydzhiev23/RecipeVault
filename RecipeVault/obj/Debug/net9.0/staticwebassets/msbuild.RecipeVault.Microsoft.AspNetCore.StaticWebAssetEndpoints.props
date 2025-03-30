@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/RecipeVault/css/site.6wo22gdt3h.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6wo22gdt3h"},{"Name":"integrity","Value":"sha256-eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb\u002B2vGg="},{"Name":"label","Value":"_content/RecipeVault/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2288"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb\u002B2vGg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 18:17:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeVault/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DbDM7uXEAj3CB7mr0n3D7RcRf7XlwCbC9ufh6/7pMIc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DbDM7uXEAj3CB7mr0n3D7RcRf7XlwCbC9ufh6/7pMIc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 17:52:41 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RecipeVault/css/site.z8zihjv44q.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z8zihjv44q"},{"Name":"integrity","Value":"sha256-DbDM7uXEAj3CB7mr0n3D7RcRf7XlwCbC9ufh6/7pMIc="},{"Name":"label","Value":"_content/RecipeVault/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DbDM7uXEAj3CB7mr0n3D7RcRf7XlwCbC9ufh6/7pMIc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 17:52:41 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb\u002B2vGg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2288"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb\u002B2vGg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 18:17:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeVault/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rgqx4romqe"},{"Name":"integrity","Value":"sha256-xSutKJz12OOuSvR2lcj2Nvr0xzq0bRWPVAlAZWBVHjA="},{"Name":"label","Value":"_content/RecipeVault/img/chef.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"23370"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022xSutKJz12OOuSvR2lcj2Nvr0xzq0bRWPVAlAZWBVHjA=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 17:46:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RecipeVault/js/site.far9ke272l.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"far9ke272l"},{"Name":"integrity","Value":"sha256-Z17Uloump\u002BNKiXrxxyLyFeU8oyVP7gJqlHamCurjXUQ="},{"Name":"label","Value":"_content/RecipeVault/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2503"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Z17Uloump\u002BNKiXrxxyLyFeU8oyVP7gJqlHamCurjXUQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 17:50:20 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeVault/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z17Uloump\u002BNKiXrxxyLyFeU8oyVP7gJqlHamCurjXUQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2503"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Z17Uloump\u002BNKiXrxxyLyFeU8oyVP7gJqlHamCurjXUQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 17:50:20 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2094"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 18:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RecipeVault/js/site.v5qrpjjlwz.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v5qrpjjlwz"},{"Name":"integrity","Value":"sha256-MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc="},{"Name":"label","Value":"_content/RecipeVault/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2094"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 18:56:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeVault/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
