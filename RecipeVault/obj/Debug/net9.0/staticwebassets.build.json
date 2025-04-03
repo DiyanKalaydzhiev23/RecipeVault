@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P+QUp1igb8eklQTRK36yF8AWEcXX+O0qqBKMXVhHXZw=",
+  "Hash": "LctRwO17O4Mt7yHBuvjDl/zI8dXkSoa5iQKM6PEmIZs=",
   "Source": "RecipeVault",
   "BasePath": "_content/RecipeVault",
   "Mode": "Default",
@@ -290,12 +290,12 @@
       "OriginalItemSpec": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz",
+      "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rsy0m3idgi.gz",
       "SourceId": "RecipeVault",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/RecipeVault",
-      "RelativePath": "js/site#[.{fingerprint=v5qrpjjlwz}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=rsy0m3idgi}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -304,8 +304,8 @@
       "RelatedAsset": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/js/site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vtn107em1w",
-      "Integrity": "HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4=",
+      "Fingerprint": "3fli8pixxp",
+      "Integrity": "76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/js/site.js"
@@ -458,12 +458,12 @@
       "OriginalItemSpec": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz",
+      "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz",
       "SourceId": "RecipeVault",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/RecipeVault",
-      "RelativePath": "css/site#[.{fingerprint=6wo22gdt3h}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=edoj71avca}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -472,8 +472,8 @@
       "RelatedAsset": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "yusirc9ikz",
-      "Integrity": "mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM=",
+      "Fingerprint": "rt7vfg509m",
+      "Integrity": "Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/css/site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6wo22gdt3h",
-      "Integrity": "eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg=",
+      "Fingerprint": "edoj71avca",
+      "Integrity": "3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -1466,6 +1466,48 @@
       "OriginalItemSpec": "wwwroot/img/chef.png"
     },
     {
+      "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/delete.png",
+      "SourceId": "RecipeVault",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/",
+      "BasePath": "_content/RecipeVault",
+      "RelativePath": "img/delete#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qqaiqai8yn",
+      "Integrity": "4uiQF/RgGGpZmHiOgmSMhpUO+sMattLEfarCoiYL7TA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/delete.png"
+    },
+    {
+      "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/edit.png",
+      "SourceId": "RecipeVault",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/",
+      "BasePath": "_content/RecipeVault",
+      "RelativePath": "img/edit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "soa3m4ughp",
+      "Integrity": "3J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/edit.png"
+    },
+    {
       "Identity": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/js/site.js",
       "SourceId": "RecipeVault",
       "SourceType": "Discovered",
@@ -1480,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "v5qrpjjlwz",
-      "Integrity": "MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=",
+      "Fingerprint": "rsy0m3idgi",
+      "Integrity": "K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
@@ -2749,13 +2791,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.6wo22gdt3h.css",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz",
+      "Route": "css/site.css",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001342281879"
+          "Quality": "0.001364256480"
         }
       ],
       "ResponseHeaders": [
@@ -2765,19 +2807,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "744"
+          "Value": "732"
         },
         {
           "Name": "ETag",
-          "Value": "\"mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM=\""
+          "Value": "\"Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:17:31 GMT"
+          "Value": "Tue, 01 Apr 2025 18:32:41 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2793,26 +2835,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg=\""
+          "Value": "W/\"3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "6wo22gdt3h"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg="
+          "Value": "sha256-3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc="
         }
       ]
     },
     {
-      "Route": "css/site.6wo22gdt3h.css",
+      "Route": "css/site.css",
       "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2822,7 +2856,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2288"
+          "Value": "2257"
         },
         {
           "Name": "Content-Type",
@@ -2830,11 +2864,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg=\""
+          "Value": "\"3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:17:31 GMT"
+          "Value": "Tue, 01 Apr 2025 18:32:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 18:32:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.edoj71avca.css",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001364256480"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "732"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 18:32:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "edoj71avca"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.edoj71avca.css",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 18:32:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2844,7 +3023,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6wo22gdt3h"
+          "Value": "edoj71avca"
         },
         {
           "Name": "label",
@@ -2852,13 +3031,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg="
+          "Value": "sha256-3pL/0dsXfkzxYlp/1PlHRiyd9oy4n3QnP5VVV9goNhc="
         }
       ]
     },
     {
-      "Route": "css/site.6wo22gdt3h.css.gz",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz",
+      "Route": "css/site.edoj71avca.css.gz",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2867,7 +3046,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "744"
+          "Value": "732"
         },
         {
           "Name": "Content-Type",
@@ -2875,11 +3054,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM=\""
+          "Value": "\"Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:17:31 GMT"
+          "Value": "Tue, 01 Apr 2025 18:32:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2897,7 +3076,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6wo22gdt3h"
+          "Value": "edoj71avca"
         },
         {
           "Name": "label",
@@ -2905,144 +3084,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001342281879"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "744"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:17:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2288"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:17:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-eoOobGgsV5OtFrkGuMwWHk01FaRbG/R4t6cRpb+2vGg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "744"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 18:17:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mh0p1JvoEyprBQ5MxjHtJYuDv8dpn8CLI/M+f0VrwHM="
+          "Value": "sha256-Xzgdy11VvCVXHBuERYTOWAD0dPKARTqoFkAGQIorPKs="
         }
       ]
     },
@@ -3427,13 +3469,177 @@
       ]
     },
     {
+      "Route": "img/delete.png",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/delete.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4uiQF/RgGGpZmHiOgmSMhpUO+sMattLEfarCoiYL7TA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:42:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4uiQF/RgGGpZmHiOgmSMhpUO+sMattLEfarCoiYL7TA="
+        }
+      ]
+    },
+    {
+      "Route": "img/delete.qqaiqai8yn.png",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/delete.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4uiQF/RgGGpZmHiOgmSMhpUO+sMattLEfarCoiYL7TA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:42:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qqaiqai8yn"
+        },
+        {
+          "Name": "label",
+          "Value": "img/delete.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4uiQF/RgGGpZmHiOgmSMhpUO+sMattLEfarCoiYL7TA="
+        }
+      ]
+    },
+    {
+      "Route": "img/edit.png",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/edit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:42:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524="
+        }
+      ]
+    },
+    {
+      "Route": "img/edit.soa3m4ughp.png",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/edit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 17:42:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "soa3m4ughp"
+        },
+        {
+          "Name": "label",
+          "Value": "img/edit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rsy0m3idgi.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001515151515"
+          "Quality": "0.000853242321"
         }
       ],
       "ResponseHeaders": [
@@ -3443,15 +3649,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "659"
+          "Value": "1171"
         },
         {
           "Name": "ETag",
-          "Value": "\"HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4=\""
+          "Value": "\"76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 18:56:48 GMT"
+          "Value": "Thu, 03 Apr 2025 16:58:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3471,13 +3677,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=\""
+          "Value": "W/\"K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc="
+          "Value": "sha256-K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM="
         }
       ]
     },
@@ -3492,7 +3698,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2094"
+          "Value": "4211"
         },
         {
           "Name": "Content-Type",
@@ -3500,11 +3706,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=\""
+          "Value": "\"K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 18:56:48 GMT"
+          "Value": "Thu, 03 Apr 2025 16:58:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3514,13 +3720,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc="
+          "Value": "sha256-K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rsy0m3idgi.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3529,7 +3735,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "659"
+          "Value": "1171"
         },
         {
           "Name": "Content-Type",
@@ -3537,11 +3743,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4=\""
+          "Value": "\"76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 18:56:48 GMT"
+          "Value": "Thu, 03 Apr 2025 16:58:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3559,18 +3765,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4="
+          "Value": "sha256-76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM="
         }
       ]
     },
     {
-      "Route": "js/site.v5qrpjjlwz.js",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz",
+      "Route": "js/site.rsy0m3idgi.js",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rsy0m3idgi.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001515151515"
+          "Quality": "0.000853242321"
         }
       ],
       "ResponseHeaders": [
@@ -3580,15 +3786,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "659"
+          "Value": "1171"
         },
         {
           "Name": "ETag",
-          "Value": "\"HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4=\""
+          "Value": "\"76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 18:56:48 GMT"
+          "Value": "Thu, 03 Apr 2025 16:58:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3608,13 +3814,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=\""
+          "Value": "W/\"K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v5qrpjjlwz"
+          "Value": "rsy0m3idgi"
         },
         {
           "Name": "label",
@@ -3622,12 +3828,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc="
+          "Value": "sha256-K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM="
         }
       ]
     },
     {
-      "Route": "js/site.v5qrpjjlwz.js",
+      "Route": "js/site.rsy0m3idgi.js",
       "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3637,7 +3843,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2094"
+          "Value": "4211"
         },
         {
           "Name": "Content-Type",
@@ -3645,11 +3851,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc=\""
+          "Value": "\"K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 18:56:48 GMT"
+          "Value": "Thu, 03 Apr 2025 16:58:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3659,7 +3865,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v5qrpjjlwz"
+          "Value": "rsy0m3idgi"
         },
         {
           "Name": "label",
@@ -3667,13 +3873,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MxLU9A6/V0hLjgBxqi6Gmw0W2KTXl7LITwWGNZdjuDc="
+          "Value": "sha256-K9J0kyokNABENksf153grKjd9PGMhf/3E9QBnUV15dM="
         }
       ]
     },
     {
-      "Route": "js/site.v5qrpjjlwz.js.gz",
-      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz",
+      "Route": "js/site.rsy0m3idgi.js.gz",
+      "AssetFile": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rsy0m3idgi.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3682,7 +3888,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "659"
+          "Value": "1171"
         },
         {
           "Name": "Content-Type",
@@ -3690,11 +3896,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4=\""
+          "Value": "\"76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 18:56:48 GMT"
+          "Value": "Thu, 03 Apr 2025 16:58:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3712,7 +3918,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v5qrpjjlwz"
+          "Value": "rsy0m3idgi"
         },
         {
           "Name": "label",
@@ -3720,7 +3926,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HfWWnGkYKha+3C6XAJgZb2JUr6qZKyWcRa28xkWUFp4="
+          "Value": "sha256-76iunqw1inRFTZQffh9JjjoD6BqyQOi28mC8CrxaeaM="
         }
       ]
     },

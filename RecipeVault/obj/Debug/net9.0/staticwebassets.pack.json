@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets/img/chef.png"
     },
     {
+      "Id": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/delete.png",
+      "PackagePath": "staticwebassets/img/delete.png"
+    },
+    {
+      "Id": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/img/edit.png",
+      "PackagePath": "staticwebassets/img/edit.png"
+    },
+    {
       "Id": "/Users/diyan/RiderProjects/RecipeVault/RecipeVault/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

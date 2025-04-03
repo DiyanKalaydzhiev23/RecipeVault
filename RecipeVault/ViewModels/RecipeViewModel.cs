@@ -5,6 +5,8 @@ namespace RecipeVault.ViewModels
 {
     public class RecipeViewModel
     {
+        public int Id { get; set; } // Needed for Edit
+
         [Required]
         public string Name { get; set; }
 
@@ -14,8 +16,10 @@ namespace RecipeVault.ViewModels
         [Required]
         public int PreparationTime { get; set; }
 
+        public IFormFile? ImageFile { get; set; } // Optional for edit
+
         [Required]
-        public IFormFile ImageFile { get; set; }
+        public string Instructions { get; set; }
 
         public List<string> IngredientNames { get; set; } = new();
     }

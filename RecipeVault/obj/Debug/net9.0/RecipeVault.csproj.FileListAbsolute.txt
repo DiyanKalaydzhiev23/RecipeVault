@@ -235,5 +235,5 @@
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/DotNetEnv.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Newtonsoft.Json.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Sprache.dll
-/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-6wo22gdt3h.gz
-/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-v5qrpjjlwz.gz
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rsy0m3idgi.gz

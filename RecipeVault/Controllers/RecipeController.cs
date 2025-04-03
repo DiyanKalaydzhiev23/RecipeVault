@@ -81,9 +81,8 @@ namespace RecipeVault.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        // GET /Recipe/api/{name}
         [HttpGet("Recipe/api/{name}")]
-        [AllowAnonymous] // Optional: allows frontend access without login
+        [AllowAnonymous]
         public async Task<IActionResult> GetRecipeJson(string name)
         {
             var recipes = await _context.Recipes
@@ -101,23 +100,97 @@ namespace RecipeVault.Controllers
             {
                 var meal = new Dictionary<string, object>
                 {
+                    ["id"] = recipe.Id,  // ✅ Add this line
                     ["name"] = recipe.Name,
                     ["image"] = recipe.ImageUrl,
                     ["instructions"] = recipe.Instructions,
+                    ["userId"] = recipe.UserId,
                 };
-                
-                var ingredients = new List<string>();
-                foreach (var recipeIngredient in recipe.RecipeIngredients)
-                {
-                    ingredients.Add(recipeIngredient.Ingredient.Name);
-                }
-                
+
+                var ingredients = recipe.RecipeIngredients
+                    .Select(ri => ri.Ingredient.Name)
+                    .ToList();
+
                 meal["ingredients"] = ingredients;
 
                 meals.Add(meal);
             }
 
             return Ok(new { meals });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var recipe = await _context.Recipes
+                .Include(r => r.RecipeIngredients)
+                .ThenInclude(ri => ri.Ingredient)
+                .FirstOrDefaultAsync(r => r.Id == id);
+
+            if (recipe == null) return NotFound();
+
+            var model = new RecipeViewModel
+            {
+                Id = recipe.Id,
+                Name = recipe.Name,
+                Difficulty = recipe.Difficulty,
+                PreparationTime = recipe.PreparationTime,
+                IngredientNames = recipe.RecipeIngredients.Select(ri => ri.Ingredient.Name).ToList(),
+                Instructions = recipe.Instructions
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(RecipeViewModel model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var recipe = await _context.Recipes
+                .Include(r => r.RecipeIngredients)
+                .FirstOrDefaultAsync(r => r.Id == model.Id);
+
+            if (recipe == null) return NotFound();
+
+            recipe.Name = model.Name;
+            recipe.Difficulty = model.Difficulty;
+            recipe.PreparationTime = model.PreparationTime;
+            recipe.Instructions = model.Instructions;
+
+            // Update ingredients
+            recipe.RecipeIngredients.Clear();
+
+            foreach (var ingredientName in model.IngredientNames.Where(n => !string.IsNullOrWhiteSpace(n)).Distinct())
+            {
+                var existing = await _context.Ingredients.FirstOrDefaultAsync(i => i.Name.ToLower() == ingredientName.ToLower());
+                var ingredient = existing ?? new Ingredient { Name = ingredientName };
+
+                if (existing == null) _context.Ingredients.Add(ingredient);
+
+                recipe.RecipeIngredients.Add(new RecipeIngredient
+                {
+                    Recipe = recipe,
+                    Ingredient = ingredient
+                });
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Home");
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var recipe = await _context.Recipes.FindAsync(id);
+
+            if (recipe == null) return NotFound();
+
+            _context.Recipes.Remove(recipe);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

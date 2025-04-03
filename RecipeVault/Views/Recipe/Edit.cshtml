@@ -1,0 +1,17 @@
+@model RecipeVault.ViewModels.RecipeViewModel
+
+@{
+    ViewData["Title"] = "Edit Recipe";
+}
+
+<h2>Edit Recipe</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data" class="container mt-4">
+    @Html.AntiForgeryToken()
+
+    @await Html.PartialAsync("_RecipeFormPartial", Model)
+
+    <div class="mb-3">
+        <button class="w-100 p-2 custom-button" type="submit">Save Changes</button>
+    </div>
+</form>

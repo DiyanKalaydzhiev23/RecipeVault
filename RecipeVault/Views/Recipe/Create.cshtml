@@ -1,62 +1,17 @@
 @model RecipeVault.ViewModels.RecipeViewModel
-@using RecipeVault.Enums
 
-<form asp-action="Create" method="post" class="container mt-4" enctype="multipart/form-data">
-    <!-- Recipe Name -->
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label small text-muted"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger small"></span>
-    </div>
+@{
+    ViewData["Title"] = "Create Recipe";
+}
 
-    <!-- Difficulty -->
-    <div class="mb-3">
-        <label asp-for="Difficulty" class="form-label small text-muted"></label>
-        <select asp-for="Difficulty" class="form-select" asp-items="Html.GetEnumSelectList<RecipeDifficultyLevel>()"></select>
-        <span asp-validation-for="Difficulty" class="text-danger small"></span>
-    </div>
+<h2>Create Recipe</h2>
 
-    <!-- Preparation Time -->
-    <div class="mb-3">
-        <label asp-for="PreparationTime" class="form-label small text-muted"></label>
-        <input asp-for="PreparationTime" class="form-control" type="number" />
-        <span asp-validation-for="PreparationTime" class="text-danger small"></span>
-    </div>
+<form asp-action="Create" method="post" enctype="multipart/form-data" class="container mt-4">
+    @Html.AntiForgeryToken()
 
-    <!-- Image Upload -->
-    <div class="mb-3">
-        <label asp-for="ImageFile" class="form-label small text-muted"></label>
-        <input asp-for="ImageFile" class="form-control" type="file" />
-        <span asp-validation-for="ImageFile" class="text-danger small"></span>
-    </div>
+    @await Html.PartialAsync("_RecipeFormPartial", Model)
 
-    <!-- Ingredients -->
-    <div class="mb-3">
-        <label class="form-label small text-muted">Ingredients</label>
-        <div id="ingredients-wrapper">
-            <input type="text" name="IngredientNames" class="form-control mb-2" placeholder="e.g., 1/2 Garlic" />
-        </div>
-        <button type="button" class="btn btn-outline-secondary btn-sm" onclick="addIngredient()">+ Add Ingredient</button>
-    </div>
-
-    <!-- Submit -->
     <div class="mb-3">
         <button class="w-100 p-2 custom-button" type="submit">Create</button>
     </div>
 </form>
-
-@section Scripts {
-    <script>
-        function addIngredient() {
-            const wrapper = document.getElementById('ingredients-wrapper');
-
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.name = 'IngredientNames';
-            input.className = 'form-control mb-2';
-            input.placeholder = 'e.g., Basil';
-
-            wrapper.appendChild(input);
-        }
-    </script>
-}
