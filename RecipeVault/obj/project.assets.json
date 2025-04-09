@@ -82,6 +82,59 @@
           "lib/netstandard1.3/DotNetEnv.dll": {}
         }
       },
+      "EasyData.AspNetCore/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "EasyData.Core": "1.4.0"
+        },
+        "compile": {
+          "lib/net6.0/EasyData.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/EasyData.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "EasyData.Core/1.5.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net9.0/EasyData.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/EasyData.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EasyData.EntityFrameworkCore.Relational/1.5.7": {
+        "type": "package",
+        "dependencies": {
+          "EasyData.Core": "1.5.7",
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0"
+        },
+        "compile": {
+          "lib/net9.0/EasyData.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/EasyData.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -3012,6 +3065,69 @@
         "dotnetenv.3.1.1.nupkg.sha512",
         "dotnetenv.nuspec",
         "lib/netstandard1.3/DotNetEnv.dll"
+      ]
+    },
+    "EasyData.AspNetCore/1.4.0": {
+      "sha512": "OoDLHq6ZM/VX4uUtDtHA72z32LnZhPTk3ljwxUEFcYc+LJQ2KmLHFfNv9DzpGx2HV4AzFp6F6ve0x3Ow+0A8VQ==",
+      "type": "package",
+      "path": "easydata.aspnetcore/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easydata.aspnetcore.1.4.0.nupkg.sha512",
+        "easydata.aspnetcore.nuspec",
+        "lib/net5.0/EasyData.AspNetCore.dll",
+        "lib/net5.0/EasyData.AspNetCore.xml",
+        "lib/net6.0/EasyData.AspNetCore.dll",
+        "lib/net6.0/EasyData.AspNetCore.xml",
+        "lib/netcoreapp3.1/EasyData.AspNetCore.dll",
+        "lib/netcoreapp3.1/EasyData.AspNetCore.xml",
+        "lib/netstandard2.0/EasyData.AspNetCore.dll",
+        "lib/netstandard2.0/EasyData.AspNetCore.xml"
+      ]
+    },
+    "EasyData.Core/1.5.7": {
+      "sha512": "Nj9gdeiMidUGUmCK6+mTZ7QeVOtBwxBmHwu83xZD3MiNfWq6LIgyFR0HBxzqZs/aekyn4criWXhkkFUd5njSpw==",
+      "type": "package",
+      "path": "easydata.core/1.5.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easydata-icon02.png",
+        "easydata.core.1.5.7.nupkg.sha512",
+        "easydata.core.nuspec",
+        "lib/net6.0/EasyData.Core.dll",
+        "lib/net6.0/EasyData.Core.xml",
+        "lib/net8.0/EasyData.Core.dll",
+        "lib/net8.0/EasyData.Core.xml",
+        "lib/net9.0/EasyData.Core.dll",
+        "lib/net9.0/EasyData.Core.xml",
+        "lib/netstandard2.0/EasyData.Core.dll",
+        "lib/netstandard2.0/EasyData.Core.xml"
+      ]
+    },
+    "EasyData.EntityFrameworkCore.Relational/1.5.7": {
+      "sha512": "aGw9hXBf+yEPBQBqiSukRkD7V17rxMESkJUtwtbzFg8Y8I/Et6s8dgupQVz+SseAKJKhw95nb8haYjlPfx0J7w==",
+      "type": "package",
+      "path": "easydata.entityframeworkcore.relational/1.5.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easydata-icon02.png",
+        "easydata.entityframeworkcore.relational.1.5.7.nupkg.sha512",
+        "easydata.entityframeworkcore.relational.nuspec",
+        "lib/net5.0/EasyData.EntityFrameworkCore.Relational.dll",
+        "lib/net5.0/EasyData.EntityFrameworkCore.Relational.xml",
+        "lib/net6.0/EasyData.EntityFrameworkCore.Relational.dll",
+        "lib/net6.0/EasyData.EntityFrameworkCore.Relational.xml",
+        "lib/net8.0/EasyData.EntityFrameworkCore.Relational.dll",
+        "lib/net8.0/EasyData.EntityFrameworkCore.Relational.xml",
+        "lib/net9.0/EasyData.EntityFrameworkCore.Relational.dll",
+        "lib/net9.0/EasyData.EntityFrameworkCore.Relational.xml",
+        "lib/netstandard2.0/EasyData.EntityFrameworkCore.Relational.dll",
+        "lib/netstandard2.0/EasyData.EntityFrameworkCore.Relational.xml",
+        "lib/netstandard2.1/EasyData.EntityFrameworkCore.Relational.dll",
+        "lib/netstandard2.1/EasyData.EntityFrameworkCore.Relational.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -9202,6 +9318,8 @@
     "net9.0": [
       "CloudinaryDotNet >= 1.27.5",
       "DotNetEnv >= 3.1.1",
+      "EasyData.AspNetCore >= 1.4.0",
+      "EasyData.EntityFrameworkCore.Relational >= 1.5.7",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.3",
       "Microsoft.EntityFrameworkCore >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
@@ -9259,6 +9377,14 @@
           "DotNetEnv": {
             "target": "Package",
             "version": "[3.1.1, )"
+          },
+          "EasyData.AspNetCore": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
+          "EasyData.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[1.5.7, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

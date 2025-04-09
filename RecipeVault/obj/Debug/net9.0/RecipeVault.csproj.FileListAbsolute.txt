@@ -237,3 +237,7 @@
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Sprache.dll
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/ddh0zns8za-edoj71avca.gz
 /Users/diyan/RiderProjects/RecipeVault/RecipeVault/obj/Debug/net9.0/compressed/86363p5gja-rx0ou43nly.gz
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/EasyData.AspNetCore.dll
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/EasyData.Core.dll
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/EasyData.EntityFrameworkCore.Relational.dll
+/Users/diyan/RiderProjects/RecipeVault/RecipeVault/bin/Debug/net9.0/Pages/EasyData.cshtml

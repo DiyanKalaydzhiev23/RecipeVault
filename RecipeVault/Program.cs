@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RecipeVault.Data;
 using RecipeVault.Services;
+using EasyData.Services; // ✅ Needed for MapEasyData
 
 DotNetEnv.Env.Load();
 
@@ -12,48 +13,50 @@ var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+// Identity
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
+// Cloudinary
 var cloudinary = new Cloudinary(new Account(
     Environment.GetEnvironmentVariable("CLOUDINARY_CLOUD_NAME"),
     Environment.GetEnvironmentVariable("CLOUDINARY_API_KEY"),
     Environment.GetEnvironmentVariable("CLOUDINARY_API_SECRET")
 ));
 
-
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
 builder.Services.AddSingleton<CloudinaryService>();
 
-
-
-// Add services to the container.
+// Razor + Controllers
+builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); 
+app.UseStaticFiles();
 app.UseRouting();
-
 app.UseAuthorization();
 
-app.MapStaticAssets();
+app.MapEasyData(options => {
+    options.UseDbContext<ApplicationDbContext>();
+});
 
+app.MapRazorPages();
+
+// Normal controller routes
+app.MapStaticAssets();
 app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();
