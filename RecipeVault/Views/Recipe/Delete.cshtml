@@ -1,0 +1,22 @@
+@model RecipeVault.ViewModels.RecipeViewModel
+
+@{
+    ViewData["Title"] = "Delete Recipe";
+}
+
+<h2>Delete Recipe</h2>
+
+<p>
+    Are you sure you want to delete the recipe: 
+    <strong>@Model.Name</strong>?
+</p>
+
+<form asp-action="Delete" method="post">
+    @Html.AntiForgeryToken()
+
+    <!-- Pass the recipe ID to the POST action -->
+    <input asp-for="Id" type="hidden" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Cancel</a>
+</form>

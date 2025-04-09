@@ -30,7 +30,11 @@ namespace RecipeVault.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            var model = new RecipeViewModel
+            {
+                IngredientNames = new List<string>() // Make sure it's not null
+            };
+            return View(model);
         }
 
         // POST /Recipe/Create
@@ -38,11 +42,13 @@ namespace RecipeVault.Controllers
         public async Task<IActionResult> Create(RecipeViewModel model)
         {
             if (!ModelState.IsValid)
-                return View(model); // Assumes form posts from a Razor view
+                return View(model); // Return the same view with validation errors if model is invalid
 
+            // Upload image (if provided)
             var imageUrl = await _cloudinary.UploadImageAsync(model.ImageFile);
             var userId = _userManager.GetUserId(User);
 
+            // Create your Recipe entity with all required fields
             var recipe = new Recipe
             {
                 Name = model.Name,
@@ -50,12 +56,17 @@ namespace RecipeVault.Controllers
                 PreparationTime = model.PreparationTime,
                 ImageUrl = imageUrl,
                 UserId = userId,
+
+                // IMPORTANT: Add the Instructions property
+                Instructions = model.Instructions,
+
                 RecipeIngredients = new List<RecipeIngredient>()
             };
 
+            // Handle ingredients
             foreach (var ingredientName in model.IngredientNames
-                .Where(name => !string.IsNullOrWhiteSpace(name))
-                .Distinct(StringComparer.OrdinalIgnoreCase))
+                         .Where(name => !string.IsNullOrWhiteSpace(name))
+                         .Distinct(StringComparer.OrdinalIgnoreCase))
             {
                 var existing = await _context.Ingredients
                     .FirstOrDefaultAsync(i => i.Name.ToLower() == ingredientName.ToLower());
@@ -75,6 +86,7 @@ namespace RecipeVault.Controllers
                 });
             }
 
+            // Save to database
             _context.Recipes.Add(recipe);
             await _context.SaveChangesAsync();
 
@@ -180,11 +192,29 @@ namespace RecipeVault.Controllers
             return RedirectToAction("Index", "Home");
         }
         
-        [HttpPost]
+        
+        // GET /Recipe/Delete/1
+        [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
             var recipe = await _context.Recipes.FindAsync(id);
+            if (recipe == null) return NotFound();
 
+            var model = new RecipeViewModel
+            {
+                Id = recipe.Id,
+                Name = recipe.Name
+            };
+            
+            return View(model);
+        }
+
+        // POST /Recipe/Delete/1
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var recipe = await _context.Recipes.FindAsync(id);
             if (recipe == null) return NotFound();
 
             _context.Recipes.Remove(recipe);

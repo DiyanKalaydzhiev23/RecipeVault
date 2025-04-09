@@ -54,19 +54,3 @@
     </div>
     <button type="button" class="btn btn-outline-secondary btn-sm" onclick="addIngredient()">+ Add Ingredient</button>
 </div>
-
-@section Scripts {
-<script>
-    function addIngredient() {
-        const wrapper = document.getElementById('ingredients-wrapper');
-
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.name = 'IngredientNames';
-        input.className = 'form-control mb-2';
-        input.placeholder = 'e.g., Basil';
-
-        wrapper.appendChild(input);
-    }
-</script>
-}
