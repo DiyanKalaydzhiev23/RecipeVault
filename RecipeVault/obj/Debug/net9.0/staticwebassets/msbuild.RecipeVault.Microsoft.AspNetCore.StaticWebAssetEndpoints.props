@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"soa3m4ughp"},{"Name":"integrity","Value":"sha256-3J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524="},{"Name":"label","Value":"_content/RecipeVault/img/edit.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19222"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223J5t/iJr0SF0PPSleNmBCuSo6e90FqVoRhe6OMen524=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Apr 2025 18:33:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RecipeVault/js/site.f1j5wgc32r.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f1j5wgc32r"},{"Name":"integrity","Value":"sha256-o89vM50sQrQIuIdC61bcveJ/GkXMIBHN/ntEmEsmlTo="},{"Name":"label","Value":"_content/RecipeVault/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4061"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022o89vM50sQrQIuIdC61bcveJ/GkXMIBHN/ntEmEsmlTo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 09:08:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeVault/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-v3gOAcktbJNt\u002B\u002BUw1pTCvbpjMQpSDXefW\u002BD05WGeaoQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6157"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022v3gOAcktbJNt\u002B\u002BUw1pTCvbpjMQpSDXefW\u002BD05WGeaoQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Apr 2025 19:06:01 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RecipeVault/js/site.rx0ou43nly.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rx0ou43nly"},{"Name":"integrity","Value":"sha256-v3gOAcktbJNt\u002B\u002BUw1pTCvbpjMQpSDXefW\u002BD05WGeaoQ="},{"Name":"label","Value":"_content/RecipeVault/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6157"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022v3gOAcktbJNt\u002B\u002BUw1pTCvbpjMQpSDXefW\u002BD05WGeaoQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Apr 2025 19:06:01 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o89vM50sQrQIuIdC61bcveJ/GkXMIBHN/ntEmEsmlTo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4061"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022o89vM50sQrQIuIdC61bcveJ/GkXMIBHN/ntEmEsmlTo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 09:08:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeVault/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

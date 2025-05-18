@@ -2,9 +2,6 @@
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 
-// Ensure currentUserId is set from server-side (e.g. in a script tag in your Layout)
-const currentUserId = '@User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value';
-
 function addIngredient() {
     const wrapper = document.getElementById('ingredients-wrapper');
     const input = document.createElement('input');
@@ -64,27 +61,7 @@ searchBtn.addEventListener("click", () => {
             });
 
             ingredientCon.appendChild(parentUl);
-
-            // Create an "Add Ingredient" button (if you want always visible or only for recipe owners)
-            // If you only want owners to have this, wrap it in: if (myMeal.userId === currentUserId) { ... }
-            const addIngredientBtn = document.createElement("button");
-            addIngredientBtn.id = "add-ingredient";
-            addIngredientBtn.innerText = "+ Add Ingredient";
-            addIngredientBtn.className = "btn btn-success";
-
-            // Click handler: add a new <li><input/></li>
-            addIngredientBtn.addEventListener("click", () => {
-                const newLi = document.createElement("li");
-                const input = document.createElement("input");
-                input.type = "text";
-                input.placeholder = "New Ingredient";
-                newLi.appendChild(input);
-                parentUl.appendChild(newLi);
-            });
-
-            // Append the button to the ingredients container
-            ingredientCon.appendChild(addIngredientBtn);
-
+            
             // ----- Hide/Show Instructions -----
             document.getElementById("hide-recipe").addEventListener("click", () => {
                 document.getElementById("recipe").style.display = "none";
@@ -123,24 +100,7 @@ searchBtn.addEventListener("click", () => {
                 });
 
                 deleteBtn.addEventListener("click", () => {
-                    if (confirm("Are you sure you want to delete this recipe?")) {
-                        const form = document.createElement("form");
-                        form.method = "POST";
-                        form.action = `/Recipe/Delete/${recipeId}`;
-
-                        // If you have the anti-forgery token in the DOM
-                        const tokenInput = document.querySelector('input[name="__RequestVerificationToken"]');
-                        if (tokenInput) {
-                            const hiddenToken = document.createElement("input");
-                            hiddenToken.type = "hidden";
-                            hiddenToken.name = "__RequestVerificationToken";
-                            hiddenToken.value = tokenInput.value;
-                            form.appendChild(hiddenToken);
-                        }
-
-                        document.body.appendChild(form);
-                        form.submit();
-                    }
+                    window.location.href = `/Recipe/Delete/${recipeId}`;
                 });
             }
         })
