@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using RecipeVault.Data;
 using RecipeVault.Services;
 using EasyData.Services;
+using Microsoft.AspNetCore.Authentication;
 
 
 namespace RecipeVault
@@ -27,10 +28,16 @@ namespace RecipeVault
             
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
-
+            
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly",
+                    policy => policy.RequireRole("Admin"));
+            });
 
             services.AddSingleton(new Cloudinary(new Account(
                 System.Environment.GetEnvironmentVariable("CLOUDINARY_CLOUD_NAME"),
@@ -57,18 +64,48 @@ namespace RecipeVault
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
+            
+            
+            app.UseWhen(ctx => ctx.Request.Path.StartsWithSegments("/easydata"),
+                adminApp =>
+                {
+                    // runs *only* for URLs that begin with /easyadmin…
+
+                    adminApp.Use(async (ctx, next) =>
+                    {
+                        // 1) not signed in  → kick off the normal Identity login flow
+                        if (!ctx.User.Identity?.IsAuthenticated ?? true)
+                        {
+                            await ctx.ChallengeAsync();          // 302 → /Identity/Account/Login
+                            return;
+                        }
+
+                        // 2) signed in but *not* an Admin  → 403 Forbidden
+                        if (!ctx.User.IsInRole("Admin"))
+                        {
+                            ctx.Response.StatusCode = StatusCodes.Status403Forbidden;
+                            await ctx.Response.CompleteAsync();
+                            return;
+                        }
+
+                        // 3) good to go
+                        await next();
+                    });
+                });
 
             // ✅ EasyData + Razor Pages
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapEasyData(options => {
+                endpoints.MapEasyData(options =>
+                {
                     options.UseDbContext<ApplicationDbContext>();
-                });
+                });                    
 
                 endpoints.MapRazorPages();
             });
-
+            
             // Optionally apply migrations or seed DB
             using (var scope = app.ApplicationServices.CreateScope())
             {
